@@ -3,7 +3,7 @@ package com.ibm.academia.universidades.repositories;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.ibm.academia.universidades.entities.Persona;
+import com.ibm.academia.universidades.models.entities.Persona;
 
 @Repository("repositorioAlumnos")
 public interface AlumnoRepository extends PersonaRepository{

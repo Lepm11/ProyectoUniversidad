@@ -8,9 +8,9 @@ import org.springframework.data.repository.init.RepositoriesPopulatedEvent;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ibm.academia.universidades.entities.Alumno;
-import com.ibm.academia.universidades.entities.Carrera;
-import com.ibm.academia.universidades.entities.Persona;
+import com.ibm.academia.universidades.models.entities.Alumno;
+import com.ibm.academia.universidades.models.entities.Carrera;
+import com.ibm.academia.universidades.models.entities.Persona;
 import com.ibm.academia.universidades.repositories.AlumnoRepository;
 import com.ibm.academia.universidades.repositories.PersonaRepository;
 

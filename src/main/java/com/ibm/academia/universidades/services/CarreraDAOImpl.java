@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ibm.academia.universidades.entities.Carrera;
+import com.ibm.academia.universidades.models.entities.Carrera;
 import com.ibm.academia.universidades.repositories.CarreraRepository;
 
 import lombok.ToString;

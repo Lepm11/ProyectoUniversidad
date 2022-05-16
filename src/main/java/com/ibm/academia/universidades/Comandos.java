@@ -10,8 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.ibm.academia.universidades.entities.Carrera;
-import com.ibm.academia.universidades.entities.Persona;
+import com.ibm.academia.universidades.models.entities.Carrera;
+import com.ibm.academia.universidades.models.entities.Persona;
 import com.ibm.academia.universidades.services.AlumnoDAO;
 import com.ibm.academia.universidades.services.CarreraDAO;
 import com.ibm.academia.universidades.services.PersonaDAO;

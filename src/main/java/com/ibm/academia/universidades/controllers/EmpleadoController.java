@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ibm.academia.universidades.entities.Persona;
 import com.ibm.academia.universidades.exceptions.NotFoundException;
+import com.ibm.academia.universidades.models.entities.Persona;
 import com.ibm.academia.universidades.services.PersonaDAO;
 
 @RestController
@@ -24,7 +24,7 @@ public class EmpleadoController {
 	@Qualifier("empleadoDAOImpl")
 	private PersonaDAO empleadoDao;
 	
-	@PostMapping
+	@PostMapping("/post")
 	public ResponseEntity<?> crearEmpleado(@RequestBody Persona empleado)
 	{
 		Persona empleadoGuardado = empleadoDao.guardar(empleado);

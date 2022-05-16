@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ibm.academia.universidades.entities.Aula;
 import com.ibm.academia.universidades.enums.Pizarron;
+import com.ibm.academia.universidades.models.entities.Aula;
 import com.ibm.academia.universidades.repositories.AulaRepository;
 
 @Service

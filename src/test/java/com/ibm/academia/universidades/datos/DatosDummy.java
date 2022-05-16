@@ -1,6 +1,6 @@
 package com.ibm.academia.universidades.datos;
 
-import com.ibm.academia.universidades.entities.Carrera;
+import com.ibm.academia.universidades.models.entities.Carrera;
 
 public class DatosDummy {
 	

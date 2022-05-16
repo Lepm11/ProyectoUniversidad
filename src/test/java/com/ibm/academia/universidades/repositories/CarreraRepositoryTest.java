@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 
 import com.ibm.academia.universidades.datos.DatosDummy;
-import com.ibm.academia.universidades.entities.Carrera;
+import com.ibm.academia.universidades.models.entities.Carrera;
 
 @DataJpaTest
 public class CarreraRepositoryTest {

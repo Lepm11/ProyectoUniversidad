@@ -6,8 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 
-
-import com.ibm.academia.universidades.entities.Persona;
+import com.ibm.academia.universidades.models.entities.Persona;
 
 @NoRepositoryBean
 public interface PersonaRepository extends CrudRepository<Persona, Integer>{

@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ibm.academia.universidades.entities.Persona;
+import com.ibm.academia.universidades.models.entities.Persona;
 import com.ibm.academia.universidades.repositories.PersonaRepository;
 import com.ibm.academia.universidades.repositories.ProfesorRepository;
 

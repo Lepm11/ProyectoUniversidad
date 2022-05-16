@@ -1,4 +1,4 @@
-package com.ibm.academia.universidades.entities;
+package com.ibm.academia.universidades.models.entities;
 
 import java.io.Serializable;
 import java.util.Date;

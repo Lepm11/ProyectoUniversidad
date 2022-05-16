@@ -4,8 +4,8 @@ import org.springframework.data.jpa.repository.Query;
 //import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.ibm.academia.universidades.entities.Persona;
 import com.ibm.academia.universidades.enums.TipoEmpleado;
+import com.ibm.academia.universidades.models.entities.Persona;
 
 @Repository("repositorioEmpleados")
 public interface EmpleadoRepository extends PersonaRepository {

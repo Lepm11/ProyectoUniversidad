@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ibm.academia.universidades.entities.Aula;
 import com.ibm.academia.universidades.exceptions.NotFoundException;
+import com.ibm.academia.universidades.models.entities.Aula;
 import com.ibm.academia.universidades.services.AulaDAO;
 
 @RestController
@@ -67,7 +67,7 @@ public class AulaController {
 		
 	}
 	
-	@DeleteMapping("/aulaId/{aulaId}")
+	@DeleteMapping("/aulaId/delete/{aulaId}")
 	public ResponseEntity<?> eliminarAlumno(@PathVariable Integer aulaId)
 	{
 		

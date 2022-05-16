@@ -6,8 +6,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.ibm.academia.universidades.entities.Aula;
 import com.ibm.academia.universidades.enums.Pizarron;
+import com.ibm.academia.universidades.models.entities.Aula;
 
 @Repository
 public interface AulaRepository extends CrudRepository<Aula, Integer>{

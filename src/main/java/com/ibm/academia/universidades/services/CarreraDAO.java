@@ -1,6 +1,6 @@
 package com.ibm.academia.universidades.services;
 
-import com.ibm.academia.universidades.entities.Carrera;
+import com.ibm.academia.universidades.models.entities.Carrera;
 
 public interface CarreraDAO extends GenericoDAO<Carrera> {
 

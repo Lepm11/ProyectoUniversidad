@@ -3,7 +3,7 @@ package com.ibm.academia.universidades.repositories;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.ibm.academia.universidades.entities.Carrera;
+import com.ibm.academia.universidades.models.entities.Carrera;
 
 @Repository
 public interface CarreraRepository extends CrudRepository<Carrera, Integer>{

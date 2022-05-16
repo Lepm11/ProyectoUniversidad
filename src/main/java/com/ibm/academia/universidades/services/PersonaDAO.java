@@ -2,7 +2,7 @@ package com.ibm.academia.universidades.services;
 
 import java.util.Optional;
 
-import com.ibm.academia.universidades.entities.Persona;
+import com.ibm.academia.universidades.models.entities.Persona;
 
 public interface PersonaDAO extends GenericoDAO<Persona>{
 

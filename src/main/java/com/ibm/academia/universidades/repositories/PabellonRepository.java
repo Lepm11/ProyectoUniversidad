@@ -2,7 +2,7 @@ package com.ibm.academia.universidades.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.ibm.academia.universidades.entities.Pabellon;
+import com.ibm.academia.universidades.models.entities.Pabellon;
 
 public interface PabellonRepository extends CrudRepository<Pabellon, Integer> {
 	public Iterable<Pabellon> findPabellonesByDireccionLocalidad(String localidad);

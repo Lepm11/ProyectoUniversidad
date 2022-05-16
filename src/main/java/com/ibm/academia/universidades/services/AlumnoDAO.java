@@ -1,7 +1,7 @@
 package com.ibm.academia.universidades.services;
 
-import com.ibm.academia.universidades.entities.Carrera;
-import com.ibm.academia.universidades.entities.Persona;
+import com.ibm.academia.universidades.models.entities.Carrera;
+import com.ibm.academia.universidades.models.entities.Persona;
 
 public interface AlumnoDAO extends PersonaDAO{
 

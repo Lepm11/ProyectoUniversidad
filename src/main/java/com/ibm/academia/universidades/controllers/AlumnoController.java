@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ibm.academia.universidades.entities.Carrera;
-import com.ibm.academia.universidades.entities.Persona;
 import com.ibm.academia.universidades.exceptions.NotFoundException;
+import com.ibm.academia.universidades.models.entities.Carrera;
+import com.ibm.academia.universidades.models.entities.Persona;
 import com.ibm.academia.universidades.services.AlumnoDAO;
 import com.ibm.academia.universidades.services.CarreraDAO;
 import com.ibm.academia.universidades.services.PersonaDAO;
@@ -40,7 +40,7 @@ public class AlumnoController {
 	 * @return Retorna un objeto Persona de tipo alumno con código httpstatus 201;
 	 * @author LEPM 13/05/22
 	 */
-	@PostMapping
+	@PostMapping("/poste")
 	public ResponseEntity<?> crearAlumno(@RequestBody Persona alumno){
 		Persona alumnoGuardado = alumnoDao.guardar(alumno);
 		
