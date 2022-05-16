@@ -3,6 +3,8 @@ package com.ibm.academia.universidades;
 import java.util.List;
 import java.util.Optional;
 
+import javax.management.loading.PrivateClassLoader;
+
 import org.hibernate.internal.build.AllowSysOut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -16,18 +18,13 @@ import com.ibm.academia.universidades.services.PersonaDAO;
 
 @Component
 public class Comandos implements CommandLineRunner {
-	
+
 	@Autowired
 	private CarreraDAO carreraDao;
-	
-	@Autowired
-	private PersonaDAO personaDao;
 	
 	@Override
 	public void run(String... args) throws Exception {
 		//Consultas repositorios
-		
-		
 		
 		/*Carrera finanzasCarrera = new Carrera(null, "Ingenieria industrial", 60, 5);
 		Carrera carreraGuardada = carreraDAO.guardar(finanzasCarrera);
@@ -74,8 +71,8 @@ public class Comandos implements CommandLineRunner {
 		/*Optional<Carrera> ingSistemasOptional = carreraDao.buscarPorId(3);
 		Iterable<Persona> alumnosIterable =((AlumnoDAO) personaDao).buscarAlumnoPorNombreCarrera(ingSistemasOptional.get().getNombre());
 		alumnosIterable.forEach(System.out::println);*/
-		
-		/*List<Carrera> carreras = (List<Carrera>)carreraDao.findCarrerasByNombreContains("sistemas");
+		/*System.out.println("PRUEBAS");
+		List<Carrera> carreras = (List<Carrera>)carreraDao.findCarrerasByNombreContains("sistemas");
 		carreras.forEach(System.out::println);*/
 		/*List<Carrera> carrerasIgnoreCase1 = (List<Carrera>) carreraDao.findCarrerasByNombreContainsIgnoreCase("SISTEMAS");
 		System.out.println("PRIMER CASO");
