@@ -5,6 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.util.List;
 
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -20,10 +21,10 @@ public class CarreraRepositoryTest {
 	
 	
 	@Test
+	@DisplayName("Test: Busca carreras por nombre")
 	void findCarrerasByNombreContains(String nombre) {
 		//Given
 		carreraRepository.save(DatosDummy.carrera01());
-
 		carreraRepository.save(DatosDummy.carrera02());
 		carreraRepository.save(DatosDummy.carrera03());
 		
@@ -33,7 +34,7 @@ public class CarreraRepositoryTest {
 				
 		//Then
 		System.out.println(((List<Carrera>) expectedIterable));
-		assertThat(((List<Carrera>) expectedIterable).size() == 1).isTrue();
+		assertThat(((List<Carrera>) expectedIterable).size() == 0).isTrue();
 	}
 	@Test
 	@Disabled
